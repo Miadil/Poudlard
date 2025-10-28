@@ -3,11 +3,11 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(16, 18, 24, 0.85);
-  backdrop-filter: saturate(160%) blur(6px);
-  -webkit-backdrop-filter: saturate(160%) blur(6px);
-  border-bottom: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  background: transparent;
+  /* backdrop-filter: saturate(160%) blur(6px); */
+  /* -webkit-backdrop-filter: saturate(160%) blur(6px); */
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .site-header-hdr .container-hdr {
@@ -67,7 +67,10 @@
 
 /* Mobile tweaks */
 @media (max-width: 640px) {
-  .site-header-hdr .container-hdr { height: auto; padding: 0.5rem 1rem; }
+  .site-header-hdr .container-hdr { 
+    /* height: auto;  */
+    padding: 0.5rem 1rem; 
+  }
   .site-header-hdr .container-hdr { flex-wrap: wrap; gap: 0.5rem 1rem; }
   .nav-hdr { width: 100%; justify-content: center; flex-wrap: wrap; gap: 0.5rem 1rem; }
 }
