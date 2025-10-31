@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 
 import App from './App.tsx'
 import Characters from './pages/Characters.tsx'
+import CharactersDetails from './pages/CharactersDetails.tsx'
 import Home from './pages/Home.tsx'
 import Houses from './pages/Houses.tsx'
 import Spells from './pages/Spells.tsx'
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:'/characters',
         element: <Characters />
+      },
+      {
+        path:'/characters/:id',
+        element: <CharactersDetails />
       },
       {
         path:'/spells',
