@@ -6,7 +6,7 @@ function Characters(){
   const [dataCharacters, setDataCharacters] = useState([])
   
   const getData = ()=> {
-    fetch('https://miadil.github.io/HarryPotterApi/api/json/characters.json')
+    fetch('http://localhost:4242/characters')
     .then(res => res.json())
     .then(resDataJson => console.log(resDataJson) || setDataCharacters(resDataJson) )
   }
